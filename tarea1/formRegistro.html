@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Personas</title>
+</head>
+<body>
+    <h1>Registro de Personas</h1>
+    <form action="" method="">
+        <p>
+            <input type="text" 
+                placeholder="Ingrese sus nombres"
+                name="name"
+                id="mi_nombre"
+                required
+            />
+        </p>
+        <p>
+            <input type="text" 
+                placeholder="Ingrese sus apellidos"
+                name="name"
+                id="mi_apellidos"
+                required
+            />
+        </p>
+        <p>
+            <input type="number" 
+            placeholder="Ingrese su DNI" 
+            name="dni" 
+            minlength="8"
+            />
+        </p>
+       
+         <p>Fecha de Nacimiento:</p>
+         <p>
+           <input type="date"/>
+         </p>
+
+        <p>Sexo:</p>
+         <p>
+            <input type="radio" name="opcion_registro" checked/> Masculino
+            <input type="radio"  name="opcion_registro"/> Femenino            
+        </p>
+
+         <p>
+            <input type="text" 
+                placeholder="Ingrese su dirección"
+                name="direccion"
+                id="mi_direccion"                
+            />
+        </p>
+        <p>
+            <input type="email"
+                placeholder="Ingrese su email"
+                name="email"
+                id="mi_Email"
+             />
+        </p>
+        <p>
+            <input type="tel"
+                placeholder="Ingrese teléfono de contacto"
+             />
+        </p>
+        <p>Formación Académica:</p>
+        <p>
+            <input type="checkbox" name="opcion_check[]" checked/>Técnico
+            <br/>
+            <input type="checkbox" name="opcion_check[]" />Titulado
+            <br/>
+            <input type="checkbox" name="opcion_check[]" />Segunda Especialidad
+            <br/>
+            <input type="checkbox" name="opcion_check[]"/>Maestria
+            <br/>
+            <input type="checkbox" name="opcion_check[]"/>Doctorado
+    
+        </p>
+        <p>
+            <input type=submit value="Registrar">
+         </p>     
+
+    </form>
+</body>
+</html>
