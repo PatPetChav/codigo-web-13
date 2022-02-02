@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: arial;
+}
+.banner {
+    background-color: slateblue;
+    height:40vh;
+   /* width:85vh;*/
+   width: 50%;
+}
+
+.banner-medio {
+    background-color:tomato;
+    height:20vh;
+    width: 60%;
+}
+
+.banner-dos {
+    background-color:yellow;
+    height:40vh;
+    width: 70%;
+}
+
+.banner-tres {
+    background-color:chartreuse;
+    height:300vh;
+    width: 100%;
+}
+
+.banner-cuatro {
+    background-color:chocolate;
+    height:40vh;
+    min-width: 50%;
+    max-width: 80%;
+}
+.banner-cinco {
+    border:12px solid crimson;
+    height: 300ox;
+    width: 300px;
+    
+}
+
+
+.titulo {
+    font-size:2em;
+    color:royalblue
+}
+
+.parrafo {
+    
+    font-size:50px;
+}
