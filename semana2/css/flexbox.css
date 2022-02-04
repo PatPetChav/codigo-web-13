@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.main-navegacion {
+    display: flex;
+    justify-content: space-between;
+    /*border: 2px solid blue;*/
+    align-items: center;
+}
+.nav ul {
+    display: flex;
+    list-style: none;
+   /* border: solid;*/
+
+}
+
+.nav ul>li {
+    margin:10px;
+}
+
+.section-principal  {
+    display: flex;
+    /*por default flex alinea los elementos en fila (row)*/
+    /*flex-direction: row;*/
+    /*flex-direction: row-reverse;*/
+    /*flex-direction: column;*/
+    /*flex-direction: column-reverse;*/
+    flex-direction: row;
+    /*flex-wrap: nowrap;*/ /*es por defecto*/
+    flex-wrap: wrap;
+}
+
+.section-principal div {
+    width:25%
+}
+
+.section-principal p {
+    border: 4px solid #f01;
+}
+
+.section-dos {
+    display: flex;
+    /*align-items: flex-start;*/
+    /*flex-direction: column;*/
+    align-items: center;
+    /*align-items: flex-end;*/
+    /*align-items: strech;*/
+   /* justify-content: center;*/
+   /*justify-content: space-between;*/
+   /*justify-content: space-around;*/
+   justify-content: space-evenly;
+
+    border: 3px solid green;
+    height: 50vh;
+}
+
+.section-dos div {
+    border:2px solid blue;
+    height: 10vh;
+    background-color: chocolate;
+     
+}
+
+.flex-grow {
+    flex-grow:1;
+
+}
+
+.flex-shrink {
+    flex-shrink: 2;
+    background-color: green !important;
+
+}
