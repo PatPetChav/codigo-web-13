@@ -33,7 +33,7 @@ body {
 }
 .section-one {
     height: 65vh;
-       display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -208,6 +208,126 @@ body {
 /*Styke for resposive desing*/
 
 /* Style for resposive design */
+
+@media only screen and (min-width:600px) {
+  .nav div {
+    padding: 5px;
+    padding-right: 5px;
+    padding-left: 5px;   
+   
+  }
+
+  .img-logo {
+    padding-left: 30px;
+    height: 30px;
+  }
+
+  .button-free {
+    margin-right: 3px;
+    cursor:pointer;
+  }
+  
+  .section-one {
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2em;
+    width: 80%;   
+    margin: auto;     
+  }
+
+  .text-normal {
+    width: 80%;    
+  }
+
+  .img-mockup {
+    width: 500px;    
+  }
+
+  .img-desktop {
+    width: 250px;
+  }
+
+  .text-sections {
+    width: 90%;
+    font-size: 0.8em;
+  }
+
+  .title-sections {
+    width: 100%;
+    font-size: 1.5em;
+  }
+
+  .section-four {
+        height: 20vh;
+  }
+
+  .section-five {
+        height: 20vh;
+  }
+
+  .background-top {
+    background: url("../../imagenes/reto2/bg-section-top-mobile-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  .background-bottom {
+    background: url("../../imagenes/reto2/bg-section-bottom-mobile-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-position: bottom; */
+  }
+
+  .background-top-dark {
+    background: url("../../imagenes/reto2/bg-footer-top-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  .section-one {
+    height: 25vh;
+    font-size: 8px;
+  }
+
+  .button-pink {
+    padding: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 15px;
+  }
+
+  .footer {
+    height: 40vh;
+  }
+
+  .logo-white {
+    width: 150px;
+  }
+
+  .text-footer {
+    font-size: 12px;
+    width: 90%;
+  }
+
+  .title-footer {
+    font-size: 15px;
+  }
+
+  .button-footer {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  
+}
 
 @media only screen and (max-width: 480px) {
   .nav div {

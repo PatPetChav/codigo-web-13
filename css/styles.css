@@ -35,6 +35,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  /*border:solid;*/
+  background: linear-gradient(360deg,pink,rgb(163, 203, 240));
+}
+
+.works {
+  background: linear-gradient(360deg,pink,rgb(163, 203, 240));
 }
 
 .title {
@@ -60,15 +66,15 @@ body {
 }
 
 .img-profile {
-  width: 243px;
-  height: 243px;
-  border-radius: 50%;
+  width: 312px;
+  height: 312px;
+  border-radius: 50%;  
 }
 
 .section-works {
   max-width: 800px;
   margin: auto;
-}
+  }
 
 .card {
   display: flex;
@@ -82,9 +88,11 @@ body {
 }
 
 .text-works {
-  font-size: 1em;
+  font-size: 2em;
   margin-bottom: 30px;
   font-weight: 300;
+  padding: 20px;
+  font-weight: bold;
 }
 
 .container-detail {
