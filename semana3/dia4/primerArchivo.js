@@ -89,7 +89,7 @@ if (edadMayor===18  ││ nombreMayor==="Juan") {
 }*/
 
 //escribir un algoritmo que pida 3 numeros e imprima el mayor
-const numero1 = +prompt("Ingrese un numero1")
+/*const numero1 = +prompt("Ingrese un numero1")
 const numero2 = +prompt("Ingrese un numero2")
 const numero3 = +prompt("Ingrese un numero3")
 
@@ -100,4 +100,4 @@ if (numero1 > numero2 && numero1 > numero3 ) {
 } else if (numero2 > numero1 && numero2 > numero3 ) {
     mensaje="El numero mayor es numero 2"
 }
-console.log(mensaje)
+console.log(mensaje)*/
