@@ -53,13 +53,19 @@
   .item2 {
     grid-area: navbar;
     background-color: #0a192a;
+    position: fixed;
+    width: calc(100% - 303px);
+    right: 0;
+    /*width: calc(99% - 300px);
+    right: 16px;*/
   }
   .item3 {
     grid-area: content;
     background-color: #0a192a;
+    overflow: auto;
   }
   
-  .document-container {
+  .documen  t-container {
     margin: 30px;
     margin-bottom: 30px;
   }
@@ -122,4 +128,8 @@
     color:red;
     font-weight: 600;
     padding: 0;
+  }
+
+  .important {
+    color:aqua
   }

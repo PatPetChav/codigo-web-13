@@ -219,5 +219,4 @@ const listaDeUtiles = {
   console.log("Teclado", components.caracteristicas["111"].teclado);
 
 
-
-
+Math
