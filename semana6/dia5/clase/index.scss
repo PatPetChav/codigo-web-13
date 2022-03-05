@@ -1,0 +1,32 @@
+// dark mode
+$bg-dark: rgb(22, 52, 151);
+$text-dark: rgb(255, 255, 255);
+
+// light mode
+$bg-light: rgb(31, 255, 162);
+$text-light: rgb(0, 0, 0);
+
+/*body[data-mode="light"] {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: $bg-light;
+  color: $text-light;
+}
+
+body[data-mode="dark"] {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: $bg-dark;
+  color: $text-dark;
+}*/
+
+
+/*el profe hizo*/
+@mixin theme($mode, $color, $bg) {
+    body[data-mode="#{$mode}"] {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: $bg;
+      color: $color;
+    }
+  }
+  @include theme("light", $text-light, $bg-light);
+  @include theme("dark", $text-dark, $bg-dark);
+    
