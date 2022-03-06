@@ -4,14 +4,17 @@
 
  const pokemonContainer = document.querySelector("#row-pokemons");
  // html from modal
- const pokemonName = document.querySelector("#pokemon-name");
+ const pokemonName = document.querySelector("#pokemon-name")
+ const pokemonHabilidad1 = document.querySelector("#pokemon-habilidad1")
+ const pokemonHabilidad2 = document.querySelector("#pokemon-habilidad2")
+ const pokemonImagen = document.querySelector("#pokemon-image")
  
  // vamos a crear una funcion para obtener los datos
  const obtenerPokemones = async () => {
    const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=100");
    const data = await response.json();
  
-   console.log(data.results);
+   console.log("pokemons:",data.results);
    setPokemonsInView(data.results);
  };
  
@@ -46,7 +49,7 @@
            </div>
            <button class='btn btn-primary' onclick='obtenerDetallePokemon("${
              result.url
-           }")' data-bs-toggle='modal' data-bs-target='#modalPokemon'>ver detalle</button>
+           }","${imgUrl}${index + 1}.svg")' data-bs-toggle='modal' data-bs-target='#modalPokemon'>ver detalle</button>
          </div>
        </div>
      `;
@@ -56,11 +59,24 @@
  };
  
  // cuando debe ejecutarse?
- const obtenerDetallePokemon = async (url) => {
+ const obtenerDetallePokemon = async (url,imagen) => {
    const response = await fetch(url);
    const data = await response.json();
-   console.log("detalle", data);
-   pokemonName.innerHTML = data.name;
+   //console.log("detalle", data);
+   pokemonName.innerHTML = data.name
+
+   let habilidades = []
+   habilidades =  data.abilities
+   //console.log("habilidad1",habilidades)
+
+   pokemonHabilidad1.innerHTML = habilidades[0].ability.name
+   pokemonHabilidad2.innerHTML = habilidades[1].ability.name
+
+   //la imagen
+   //let imagenPoke = obtenerImagenPokemon(data.name)
+   console.log("imagepoke", imagen)
+   pokemonImagen.src = imagen
+
  };
  
  // llamamos a la funcion
@@ -82,6 +98,7 @@
    );
  
    const data = await response.json();
+   //console.log("colores",data)
  
    // Problema el color que nos devuelve el API esta feo
    // para poder utilizar un color como alternativa
@@ -91,6 +108,6 @@
    // si data.color.name = red
    // buscar dentro del objeto color por el key
    // como el key es red esto retorna rgba(255, 48, 50, 0.7)
-   console.log(data.color.name);
+   //console.log(data.color.name);
    return color[data.color.name];
  };

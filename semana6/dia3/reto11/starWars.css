@@ -1,0 +1,17 @@
+body {
+    font-family: 'Hubballi', cursive;
+}
+.title {
+    text-align: center;
+}
+
+
+.card-body {
+    text-align: center;
+}
+  
+.text-title {
+    text-transform: capitalize;
+    font-weight: bold;
+   
+}

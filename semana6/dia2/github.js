@@ -82,6 +82,7 @@ const obtenerDatosGitHub = async (username = "linder3hs") => {
   //* es decir hasta que la ejecucion de fetch no termine no se ejecutura la siguiente linea
   //* para poder leer esta informacion debemos transformar el response a un JSON
   const data = await response.json();
+  console.log("datagit", data)
 
   // data.message solo existe cuando el usuario no existe
   // y su valor es Not Found

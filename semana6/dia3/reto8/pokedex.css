@@ -1,0 +1,21 @@
+body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .text-title {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  .pokemon-name {
+    text-align: center;
+    color: rgb(10, 97, 39);
+    text-transform: uppercase;
+
+  }
+
+  .pokemon-image {
+    margin-top: 30px;
+    margin-bottom: 5px;
+  }
