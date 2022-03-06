@@ -75,7 +75,7 @@ githubInputSearch.addEventListener("keyup",function(event) {
 })
 
 // El valor linder3hs solo sera valido cuando usuername este vacio
-const obtenerDatosGitHub = async (username = "linder3hs") => {
+const obtenerDatosGitHub = async (username = "PatPetChav") => {
   //* En este ejemplo await esta haciendo lo siguiente
   //* Ejecuta fetch con la url y una vez que acabe la ejecucion de fetch recien haz el console.log
   const response = await fetch(`https://api.github.com/users/${username}`);
