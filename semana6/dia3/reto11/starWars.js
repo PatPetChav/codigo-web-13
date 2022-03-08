@@ -46,10 +46,14 @@ const renderData = (data) => {
 
 const obtenerDetalleActor = async (nombreActor) => {
     //console.log("envia",nombreActor)
+    const reponse = await fetch(ULR_SW);
+    const data = await reponse.json();
+
+    console.log("data",data)
     data.map((actor) => { 
         //console.log("el actor",actor.name) 
         if(actor.name === nombreActor) {
-            tituloModal.innerHTML= "este s el titulo"
+            tituloModal.innerHTML= "este es el titulo"
             actorName.innerHTML = actor.name
             bornLocation.innerHTML = actor.bornLocation
             specie.innerHTML = actor.specie
