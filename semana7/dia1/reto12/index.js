@@ -1,11 +1,11 @@
 // como consumo el API?
-const URL = "https://6226bedf2dfa5240180c3e36.mockapi.io/fiction_movies";
+const URL = "https://62281ff09fd6174ca81b97f8.mockapi.io/api/v1/movies";
 
 const getMovies = async () => {
   try {
     const response = await fetch(URL);
     const data = await response.json();
-    return data.data;//????
+    return data;
   } catch (error) {
     console.log(error.message);
   }
@@ -47,7 +47,9 @@ const containerMovies = document.querySelector("#container-videos");
 const renderMovies = (arregloPeliculas, titulo) => {
   const html = `
     <div class="col-md-12 mt-3">
-        <h4 class="gender-movie">${arreglos.legth >0 ? titulo: ""}</h4>
+        <h4 class="gender-movie">
+        ${arregloPeliculas.length > 0 ? titulo : ""}
+        </h4>
         <div class="row">
         ${arregloPeliculas.map(
           (pelicula) =>
@@ -63,7 +65,7 @@ const renderMovies = (arregloPeliculas, titulo) => {
     </div>
       `;
 
-  containerMovies.innerHTML += html.replaceAll(",","");
+  containerMovies.innerHTML += html.replaceAll(",", "");
 };
 
 groupMovies();
