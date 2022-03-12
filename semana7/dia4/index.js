@@ -5,6 +5,8 @@ import express from "express";
 import cors from "cors";
 import { arrayMovies } from "./movies.js";
 
+
+// aqui algo masad
 const app = express();
 // Esto sirve para poder leer los JSON que envie el cliente
 app.use(express.json());
