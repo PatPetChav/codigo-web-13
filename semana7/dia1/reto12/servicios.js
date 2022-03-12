@@ -7,6 +7,9 @@
 
 const URL = "https://622ab12e14ccb950d222be86.mockapi.io/api/v1/movies"
 
+//cambiamos la ruta
+//const URL = "http://localhost:3000/movies"
+
  /**
   * Funcion para listar las peliculas
   */
