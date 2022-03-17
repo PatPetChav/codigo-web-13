@@ -67,7 +67,8 @@ const renderMovies = async () => {
                 </div>
               </td>
             </tr>`;
-    tableContainer.innerHTML += html;
+           
+    
   });
 };
 

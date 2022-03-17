@@ -1,4 +1,5 @@
 const ULR_SW = "https://akabab.github.io/starwars-api/api/all.json";
+const ULR_SW_PRO = "https://swapi.dev/api/people";
 
 const containerElements = document.querySelector("#container-elements")
 const tituloModal = document.querySelector("#modal-title")
@@ -17,7 +18,7 @@ const obtenerData = async () => {
   const reponse = await fetch(ULR_SW);
   const data = await reponse.json();
 
-  //console.log(data.results)
+  console.log("DIBUYNIO",data)
   renderData(data);
 }
 
@@ -38,41 +39,30 @@ const renderData = (data) => {
             </div>
         </div>
       `
-  
+       
         //console.log("aqui", actor)
         containerElements.innerHTML += html
     })
 }
 
 const obtenerDetalleActor = async (nombreActor) => {
-    //console.log("envia",nombreActor)
-    const reponse = await fetch(ULR_SW);
-    const data = await reponse.json();
+  //console.log("envia",nombreActor)
+  const reponse = await fetch(ULR_SW);
+  const data = await reponse.json();
 
-    console.log("data",data)
-    data.map((actor) => { 
-        //console.log("el actor",actor.name) 
-        if(actor.name === nombreActor) {
-            tituloModal.innerHTML= "este es el titulo"
-            actorName.innerHTML = actor.name
-            bornLocation.innerHTML = actor.bornLocation
-            specie.innerHTML = actor.specie
-            hairColor.innerHTML = actor.hairColor
-            eyeColor.innerHTML = actor.eyeColor
-            skinColor.innerHTML = actor.skinColor
-            heightActor.innerHTML = actor.heightActor
-            mass.innerHTML = actor.mass
-            wiki.innerHTML =  actor.wiki                      
-            return
-        }
-    })
-    
-    /*const reponse = await fetch(ULR_SW);
-    const data = await reponse.json();*/
+  const actor = data.find((personaje) => personaje.name === nombreActor);
 
-    
-  
-  }
+  tituloModal.innerHTML = "este es el titulo";
+  actorName.innerHTML = actor.name;
+  bornLocation.innerHTML = actor.bornLocation;
+  specie.innerHTML = actor.specie;
+  hairColor.innerHTML = actor.hairColor;
+  eyeColor.innerHTML = actor.eyeColor;
+  skinColor.innerHTML = actor.skinColor;
+  heightActor.innerHTML = actor.heightActor;
+  mass.innerHTML = actor.mass;
+  wiki.innerHTML = actor.wiki;
+};
 
 obtenerData()
-
+//obtenerDetalleActor()
